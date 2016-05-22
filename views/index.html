@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<p>
+			Welcome to {{ title }}
+		</p>
+
+		<div class="container">
+			<div class="col-md-12 column list-group">
+				{% for note in notes %}
+				<hr/>
+				<div class="list-group-item">
+					<div>
+						Member : <em><strong>{{note.memberName}}</strong></em>
+					</div>
+					<div>
+						Project : <em><strong>{{note.project}}</strong></em>
+					</div>
+					<div>
+						taskYesterday : <em><strong>{{note.taskYesterday}}</strong></em>
+					</div>
+					<div>
+						taskToday : <em><strong>{{note.taskToday}}</strong></em>
+					</div>
+					<div>
+						impediment : <em><strong>{{note.impediment}}</strong></em>
+					</div>
+					<!--
+					<div>
+					Created on : <em><strong>{{note.createOn}}</strong></em>
+					</div>-->
+
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+</html>

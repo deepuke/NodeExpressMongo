@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>newnote</title>
+		<meta name="description" content="">
+		<meta name="author" content="Anisha Deepu">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>newnote</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+				<form class="form-horizontal" action="newnote" method="post">
+					<fieldset>
+						<legend>
+							Enter a Meeting Note
+						</legend>
+
+						<div class="form-group">
+							<label class="col-md-4">Name</label>
+							<div class="col-md-4">
+								<select id="memberName" name="memberName" class="form-control">
+									<option value="None">Select One..</option>
+									<option value="Deepu">Deepu</option>
+									<option value="Anup">Anup</option>
+									<option value="Debin">Debin</option>
+									<option value="Lintu">Lintu</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4">Project</label>
+							<div class="col-md-4">
+								<select id="project" name="project" class="form-control">
+									<option value="None">Select One..</option>
+									<option value="TRTA">TRTA</option>
+									<option value="INTTRA">INTTRA</option>
+									<option value="MHA">MHA</option>
+									<option value="Disney">Disney</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4">Task Yesterdat</label>
+							<div class="col-md-4">
+								<input type="text" name="taskYesterday" value="Yesterday" id="taskYesterday"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4">Task Today</label>
+							<div class="col-md-4">
+								<input type="text" name="taskToday" value="Today" id="taskToday"/>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4">Impediment</label>
+							<div class="col-md-4">
+								<div class="col-md-4">
+									<textarea name="impediment" id="impediment" rows="8" cols="40"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-4">
+								<input type="submit" name="btnSubmit" value="Submit" id="btnSubmit"/>
+							</div>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Anisha Deepu
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
